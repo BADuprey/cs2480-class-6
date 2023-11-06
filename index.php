@@ -7,7 +7,7 @@
         <meta name="description" content="Class Exercise">
 </head>
 <nav>
-    <a href="../protected">Protected</a>
+    <a href="../protected/index.php">Protected</a>
 </nav>
 <body>
     <h1>Landing page, not password protected</h1>
