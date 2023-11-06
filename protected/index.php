@@ -5,7 +5,7 @@
         <meta name="author" content="Evan Trafton and Brodie Duprey">
         <meta name="description" content="Class Exercise">
         <?php
-            $allowedNetIds = array('rerickso','ettrafto','baduprey');
+            $allowedNetIds = array('rerickso','ettrafto','baduprey','aschaef1');
 
             $netId = htmlentities($_SERVER["REMOTE_USER"], ENT_QUOTES, "UTF-8");
         
@@ -16,6 +16,11 @@
 
 
     <body>
-        <h1>password protected</h1>
+        <?php if(in_array($netId, $allowedNetIds)){
+            print '<h1>password protected</h1>';
+        } else{
+            print '<p> access denied</p>';
+        }
+        ?>
 </body>
 </html>
