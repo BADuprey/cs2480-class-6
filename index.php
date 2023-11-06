@@ -9,7 +9,7 @@
 
 <body>
 <nav>
-    <a href="protected/index.php">Protected</a>
+    <a href="protected/index.php">Members Only</a>
 </nav>
     <h1>Landing page, not password protected</h1>
 </body>
